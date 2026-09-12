@@ -2,7 +2,7 @@
 
 > **Global Innovation Build Challenge V2 (GIBC V2)**  
 > **Track 02: Applied (Medical Technology & Finance)**  
-> **Live Production Dashboard**: [https://atlas-insurance-dashboard.pages.dev/](https://atlas-insurance-dashboard.pages.dev/)  
+> **Live Production Dashboard**: [https://foresure-global.pages.dev/](https://foresure-global.pages.dev/)  
 > **Ethereum Sepolia Smart Contract**: [`0xAf8CA554c540526452B0B53bE7e203A5754363ac`](https://sepolia.etherscan.io/address/0xAf8CA554c540526452B0B53bE7e203A5754363ac)  
 > **Core Team**: TZU-CHIN CHUANG (莊子進) · WEN-HAN LEE (李文涵)  
 
@@ -165,7 +165,7 @@ uvicorn apigee_target:app --host 0.0.0.0 --port 8080
 
 ## Live Demonstration & Proof of Deployment
 
-- **Live Production URL**: [https://atlas-insurance-dashboard.pages.dev/](https://atlas-insurance-dashboard.pages.dev/)
+- **Live Production URL**: [https://foresure-global.pages.dev/](https://foresure-global.pages.dev/)
 - **Smart Contract on Etherscan**: [`0xAf8CA554c540526452B0B53bE7e203A5754363ac`](https://sepolia.etherscan.io/address/0xAf8CA554c540526452B0B53bE7e203A5754363ac)
 - **Interactive Features Available in Live Dashboard**:
   1. **Real-Time Pipeline Execution**: Stream the 12-stage multi-agent debate and actuarial pricing in real-time.
