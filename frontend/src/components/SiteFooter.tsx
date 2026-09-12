@@ -7,7 +7,7 @@ import { shortHash } from "@/lib/format";
 import { useT, type DictKey } from "@/lib/i18n";
 import type { ChainStatus } from "@/lib/types";
 
-const GITHUB_URL = "https://github.com/zhuang768/ForeSure";
+const GITHUB_URL = "https://github.com/zhuang768/ForeSure-Global";
 
 const PAGES: { href: string; k: DictKey }[] = [
   { href: "/", k: "nav.home" },
@@ -72,7 +72,7 @@ export default function SiteFooter({ chain }: { chain?: ChainStatus | null }) {
               <FactIcon d={FACT_ICON.code} />
               <span className="text-muted">{t("footer.source")}</span>
               <a href={GITHUB_URL} target="_blank" rel="noreferrer" className="font-medium text-text underline-offset-4 hover:underline">
-                github.com/zhuang768/ForeSure
+                github.com/zhuang768/ForeSure-Global
               </a>
             </li>
             <li className="flex items-center gap-2.5">
