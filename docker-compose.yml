@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  atlas-scheduler:
+    build: .
+    container_name: atlas-scheduler
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./reports:/app/reports
+    command: python main.py
+
+  atlas-api-target:
+    build: .
+    container_name: atlas-api-target
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./reports:/app/reports
+    command: python apigee_target.py

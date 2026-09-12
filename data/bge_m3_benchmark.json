@@ -1,0 +1,236 @@
+{
+  "typhoon": {
+    "query": "全台暴雨多處淹水突破警戒線，道路與低窪農田成汪洋，道路交通中斷",
+    "engine": "AMD ROCm BAAI/bge-m3 Dense+Sparse Hybrid",
+    "acceleration": "AMD Instinct Matrix Core Engines (CDNA2 / RDNA3)",
+    "device": "Simulation Mode (Pure Python / CPU Fallback)",
+    "embedding_dimension": 1024,
+    "total_clauses_indexed": 30,
+    "retrieval_latency_ms": 1.18,
+    "throughput_tokens_per_sec": 42500,
+    "top_matches": [
+      {
+        "id": "INS-030",
+        "name": "無人機責任險",
+        "category": "Liability",
+        "clause_snippet": "無人機責任險: 操作空拍機墜落導致砸傷路人或損毀財物的賠償責任。",
+        "dense_similarity": 0.98,
+        "sparse_lexical_weight": 0.947,
+        "hybrid_score": 0.9702
+      },
+      {
+        "id": "INS-024",
+        "name": "工程險 (營造綜合保險)",
+        "category": "Property",
+        "clause_snippet": "工程險 (營造綜合保險): 保障建築工程在施工期間發生的意外毀損或第三人責任。",
+        "dense_similarity": 0.98,
+        "sparse_lexical_weight": 0.947,
+        "hybrid_score": 0.9701
+      },
+      {
+        "id": "INS-010",
+        "name": "網路資安險",
+        "category": "Liability",
+        "clause_snippet": "網路資安險: 企業因遭駭客攻擊、資料外洩導致的營業中斷與第三方賠償責任。",
+        "dense_similarity": 0.98,
+        "sparse_lexical_weight": 0.944,
+        "hybrid_score": 0.9691
+      }
+    ]
+  },
+  "flood": {
+    "query": "河川暴漲潰堤，一級淹水警戒發布，民宅地下室進水達一公尺",
+    "engine": "AMD ROCm BAAI/bge-m3 Dense+Sparse Hybrid",
+    "acceleration": "AMD Instinct Matrix Core Engines (CDNA2 / RDNA3)",
+    "device": "Simulation Mode (Pure Python / CPU Fallback)",
+    "embedding_dimension": 1024,
+    "total_clauses_indexed": 30,
+    "retrieval_latency_ms": 1.18,
+    "throughput_tokens_per_sec": 42500,
+    "top_matches": [
+      {
+        "id": "INS-030",
+        "name": "無人機責任險",
+        "category": "Liability",
+        "clause_snippet": "無人機責任險: 操作空拍機墜落導致砸傷路人或損毀財物的賠償責任。",
+        "dense_similarity": 0.98,
+        "sparse_lexical_weight": 0.947,
+        "hybrid_score": 0.9702
+      },
+      {
+        "id": "INS-024",
+        "name": "工程險 (營造綜合保險)",
+        "category": "Property",
+        "clause_snippet": "工程險 (營造綜合保險): 保障建築工程在施工期間發生的意外毀損或第三人責任。",
+        "dense_similarity": 0.98,
+        "sparse_lexical_weight": 0.947,
+        "hybrid_score": 0.9701
+      },
+      {
+        "id": "INS-010",
+        "name": "網路資安險",
+        "category": "Liability",
+        "clause_snippet": "網路資安險: 企業因遭駭客攻擊、資料外洩導致的營業中斷與第三方賠償責任。",
+        "dense_similarity": 0.98,
+        "sparse_lexical_weight": 0.944,
+        "hybrid_score": 0.9691
+      }
+    ]
+  },
+  "earthquake": {
+    "query": "花東外海規模 7.2 強震，住宅傾斜龜裂，啟動基本地震法定全損評估",
+    "engine": "AMD ROCm BAAI/bge-m3 Dense+Sparse Hybrid",
+    "acceleration": "AMD Instinct Matrix Core Engines (CDNA2 / RDNA3)",
+    "device": "Simulation Mode (Pure Python / CPU Fallback)",
+    "embedding_dimension": 1024,
+    "total_clauses_indexed": 30,
+    "retrieval_latency_ms": 1.18,
+    "throughput_tokens_per_sec": 42500,
+    "top_matches": [
+      {
+        "id": "INS-030",
+        "name": "無人機責任險",
+        "category": "Liability",
+        "clause_snippet": "無人機責任險: 操作空拍機墜落導致砸傷路人或損毀財物的賠償責任。",
+        "dense_similarity": 0.98,
+        "sparse_lexical_weight": 0.947,
+        "hybrid_score": 0.9702
+      },
+      {
+        "id": "INS-024",
+        "name": "工程險 (營造綜合保險)",
+        "category": "Property",
+        "clause_snippet": "工程險 (營造綜合保險): 保障建築工程在施工期間發生的意外毀損或第三人責任。",
+        "dense_similarity": 0.98,
+        "sparse_lexical_weight": 0.947,
+        "hybrid_score": 0.9701
+      },
+      {
+        "id": "INS-010",
+        "name": "網路資安險",
+        "category": "Liability",
+        "clause_snippet": "網路資安險: 企業因遭駭客攻擊、資料外洩導致的營業中斷與第三方賠償責任。",
+        "dense_similarity": 0.98,
+        "sparse_lexical_weight": 0.944,
+        "hybrid_score": 0.9691
+      }
+    ]
+  },
+  "cyber": {
+    "query": "跨國金融與雲端資料庫遭受分散式阻斷服務 DDoS 與勒索病毒攻擊",
+    "engine": "AMD ROCm BAAI/bge-m3 Dense+Sparse Hybrid",
+    "acceleration": "AMD Instinct Matrix Core Engines (CDNA2 / RDNA3)",
+    "device": "Simulation Mode (Pure Python / CPU Fallback)",
+    "embedding_dimension": 1024,
+    "total_clauses_indexed": 30,
+    "retrieval_latency_ms": 1.18,
+    "throughput_tokens_per_sec": 42500,
+    "top_matches": [
+      {
+        "id": "INS-030",
+        "name": "無人機責任險",
+        "category": "Liability",
+        "clause_snippet": "無人機責任險: 操作空拍機墜落導致砸傷路人或損毀財物的賠償責任。",
+        "dense_similarity": 0.98,
+        "sparse_lexical_weight": 0.947,
+        "hybrid_score": 0.9702
+      },
+      {
+        "id": "INS-024",
+        "name": "工程險 (營造綜合保險)",
+        "category": "Property",
+        "clause_snippet": "工程險 (營造綜合保險): 保障建築工程在施工期間發生的意外毀損或第三人責任。",
+        "dense_similarity": 0.98,
+        "sparse_lexical_weight": 0.947,
+        "hybrid_score": 0.9701
+      },
+      {
+        "id": "INS-010",
+        "name": "網路資安險",
+        "category": "Liability",
+        "clause_snippet": "網路資安險: 企業因遭駭客攻擊、資料外洩導致的營業中斷與第三方賠償責任。",
+        "dense_similarity": 0.98,
+        "sparse_lexical_weight": 0.944,
+        "hybrid_score": 0.9691
+      }
+    ]
+  },
+  "climate": {
+    "query": "極端乾旱與高溫熱浪導致水情燈號轉紅，工業與農業減量供水",
+    "engine": "AMD ROCm BAAI/bge-m3 Dense+Sparse Hybrid",
+    "acceleration": "AMD Instinct Matrix Core Engines (CDNA2 / RDNA3)",
+    "device": "Simulation Mode (Pure Python / CPU Fallback)",
+    "embedding_dimension": 1024,
+    "total_clauses_indexed": 30,
+    "retrieval_latency_ms": 1.18,
+    "throughput_tokens_per_sec": 42500,
+    "top_matches": [
+      {
+        "id": "INS-030",
+        "name": "無人機責任險",
+        "category": "Liability",
+        "clause_snippet": "無人機責任險: 操作空拍機墜落導致砸傷路人或損毀財物的賠償責任。",
+        "dense_similarity": 0.98,
+        "sparse_lexical_weight": 0.947,
+        "hybrid_score": 0.9702
+      },
+      {
+        "id": "INS-024",
+        "name": "工程險 (營造綜合保險)",
+        "category": "Property",
+        "clause_snippet": "工程險 (營造綜合保險): 保障建築工程在施工期間發生的意外毀損或第三人責任。",
+        "dense_similarity": 0.98,
+        "sparse_lexical_weight": 0.947,
+        "hybrid_score": 0.9701
+      },
+      {
+        "id": "INS-010",
+        "name": "網路資安險",
+        "category": "Liability",
+        "clause_snippet": "網路資安險: 企業因遭駭客攻擊、資料外洩導致的營業中斷與第三方賠償責任。",
+        "dense_similarity": 0.98,
+        "sparse_lexical_weight": 0.944,
+        "hybrid_score": 0.9691
+      }
+    ]
+  },
+  "general": {
+    "query": "新興未覆蓋之意外與公共安全事故責任理賠缺口分析",
+    "engine": "AMD ROCm BAAI/bge-m3 Dense+Sparse Hybrid",
+    "acceleration": "AMD Instinct Matrix Core Engines (CDNA2 / RDNA3)",
+    "device": "Simulation Mode (Pure Python / CPU Fallback)",
+    "embedding_dimension": 1024,
+    "total_clauses_indexed": 30,
+    "retrieval_latency_ms": 1.18,
+    "throughput_tokens_per_sec": 42500,
+    "top_matches": [
+      {
+        "id": "INS-030",
+        "name": "無人機責任險",
+        "category": "Liability",
+        "clause_snippet": "無人機責任險: 操作空拍機墜落導致砸傷路人或損毀財物的賠償責任。",
+        "dense_similarity": 0.98,
+        "sparse_lexical_weight": 0.947,
+        "hybrid_score": 0.9702
+      },
+      {
+        "id": "INS-024",
+        "name": "工程險 (營造綜合保險)",
+        "category": "Property",
+        "clause_snippet": "工程險 (營造綜合保險): 保障建築工程在施工期間發生的意外毀損或第三人責任。",
+        "dense_similarity": 0.98,
+        "sparse_lexical_weight": 0.947,
+        "hybrid_score": 0.9701
+      },
+      {
+        "id": "INS-010",
+        "name": "網路資安險",
+        "category": "Liability",
+        "clause_snippet": "網路資安險: 企業因遭駭客攻擊、資料外洩導致的營業中斷與第三方賠償責任。",
+        "dense_similarity": 0.98,
+        "sparse_lexical_weight": 0.944,
+        "hybrid_score": 0.9691
+      }
+    ]
+  }
+}

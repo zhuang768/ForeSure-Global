@@ -1,0 +1,333 @@
+@import "tailwindcss";
+
+/* ---- design tokens (docs/superpowers/specs/2026-09-05-frontend-redesign-design.md §6) ---- */
+:root {
+  --bg: #f3f6f4;
+  --surface: #ffffff;
+  --surface-2: #f7faf8;
+  --border: #e1e8e4;
+  --text: #17211c;
+  --muted: #5b6a62;
+  --primary: #26a862;
+  --primary-soft: #edf8f1;
+  --primary-ink: #1b7d48;
+  --warn: #c24d00;
+  --warn-soft: #fff0e3;
+  --danger: #b3261e;
+  --danger-soft: #fdecea;
+  --role-pm: #2b5cc7;
+  --role-pm-soft: #e8f0ff;
+  --role-uw: #c24d00;
+  --role-uw-soft: #fff0e3;
+  --role-ac: #1b7d48;
+  --role-ac-soft: #e3f4ea;
+  --font-base: 16px;
+  --gap: 16px;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: #0f1613;
+  --surface: #151f1a;
+  --surface-2: #0f1613;
+  --border: #243129;
+  --text: #e4ede7;
+  --muted: #a9b8af;
+  --primary: #3fc47c;
+  --primary-soft: #16301f;
+  --primary-ink: #6fdc9c;
+  --warn: #ffc99b;
+  --warn-soft: #5a2d0c;
+  --danger: #ff8a80;
+  --danger-soft: #4a1512;
+  --role-pm: #bfdbfe;
+  --role-pm-soft: #1e3a8a;
+  --role-uw: #ffc99b;
+  --role-uw-soft: #5a2d0c;
+  --role-ac: #6fdc9c;
+  --role-ac-soft: #16301f;
+  color-scheme: dark;
+}
+
+:root[data-present="1"] {
+  --font-base: 20px;
+  --gap: 24px;
+}
+
+/* expose tokens as Tailwind utilities: bg-surface, text-muted, border-border, bg-primary … */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-primary: var(--primary);
+  --color-primary-soft: var(--primary-soft);
+  --color-primary-ink: var(--primary-ink);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-role-pm: var(--role-pm);
+  --color-role-pm-soft: var(--role-pm-soft);
+  --color-role-uw: var(--role-uw);
+  --color-role-uw-soft: var(--role-uw-soft);
+  --color-role-ac: var(--role-ac);
+  --color-role-ac-soft: var(--role-ac-soft);
+  --font-sans: var(--font-geist-sans), "PingFang TC", "Noto Sans TC", system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+html {
+  font-size: var(--font-base);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* shared primitives */
+.brand-logo {
+  display: block;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+/* The transparent artwork keeps its original green on light surfaces. */
+:root[data-theme="dark"] .brand-logo:not(.brand-logo--tile) {
+  filter: brightness(0) invert(1);
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+}
+.label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition:
+    background-color 120ms ease,
+    border-color 120ms ease;
+}
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+:root[data-theme="dark"] .btn-primary {
+  color: #082014;
+}
+.btn-secondary {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--border);
+}
+.btn-secondary:hover {
+  background: var(--surface-2);
+}
+.mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Accessibility: WCAG 2.1 Focus Ring */
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+@keyframes pulse-soft {
+  from {
+    opacity: 0.45;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.pulse {
+  animation: pulse-soft 0.9s ease-in-out infinite alternate;
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* presentation mode: bigger, calmer, for the projector */
+:root[data-present="1"] .card {
+  border-radius: 1rem;
+}
+:root[data-present="1"] .label {
+  font-size: 0.8rem;
+}
+:root[data-present="1"] main {
+  max-width: 1600px;
+}
+
+/* ---- editorial homepage layout: large type, ghost section labels, glass cards, scroll reveal ---- */
+.glass {
+  background: color-mix(in srgb, var(--surface) 70%, transparent);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+/* hover lift for glass cards: rises 6px, brand-tinted shadow, border warms toward the primary.
+   Pointer-only so touch devices don't get a sticky hover; reduced-motion is handled globally above. */
+.glass-lift {
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+  will-change: transform;
+}
+@media (hover: hover) and (pointer: fine) {
+  .glass-lift:hover {
+    transform: translateY(-6px);
+    border-color: color-mix(in srgb, var(--primary) 45%, var(--border));
+    box-shadow:
+      0 22px 44px -20px color-mix(in srgb, var(--primary) 40%, transparent),
+      0 8px 20px -10px rgb(0 0 0 / 0.14);
+  }
+}
+.ghost {
+  font-size: clamp(3.5rem, 6.95vw, 6.25rem); /* 100px at 1440 */
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--primary);
+  opacity: 0.09;
+  user-select: none;
+  pointer-events: none;
+}
+:root[data-theme="dark"] .ghost {
+  opacity: 0.14;
+}
+/* Type scale measured from the reference site at 1440px: hero 88/88, en 64/64, h2 40/60,
+   h2s 32/48, h3 24/36, lead 18/31.5, body 16/28. Weights 500/600 only, letter-spacing normal. */
+.hero-type {
+  font-size: clamp(3rem, 6.1vw, 5.5rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: normal;
+}
+.t-en {
+  font-size: clamp(2.25rem, 4.45vw, 4rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: normal;
+}
+.t-h2 {
+  font-size: clamp(1.75rem, 2.8vw, 2.5rem);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+.t-h2s {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.t-h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.t-tag {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.t-lead {
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+.t-body {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.8s cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+@keyframes letter-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.35em);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.hero-letter {
+  display: inline-block;
+  opacity: 0;
+  animation: letter-in 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+  animation-delay: calc(var(--i) * 40ms);
+}
+@keyframes float-slow {
+  from {
+    transform: translateY(-8px);
+  }
+  to {
+    transform: translateY(8px);
+  }
+}
+.float-slow {
+  animation: float-slow 4.5s ease-in-out infinite alternate;
+}
+.blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  pointer-events: none;
+}
+.slide-in {
+  animation: letter-in 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}

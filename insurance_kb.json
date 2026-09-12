@@ -1,0 +1,182 @@
+[
+  {
+    "id": "INS-001",
+    "name": "人壽保險",
+    "category": "Life",
+    "description": "被保險人身故或全殘時，給付保險金給受益人。"
+  },
+  {
+    "id": "INS-002",
+    "name": "醫療險 (實支實付)",
+    "category": "Health",
+    "description": "補貼因疾病或意外住院治療期間產生的醫療費用。"
+  },
+  {
+    "id": "INS-003",
+    "name": "癌症險",
+    "category": "Health",
+    "description": "針對確診癌症及後續治療(化療、標靶)提供一次性或分期給付。"
+  },
+  {
+    "id": "INS-004",
+    "name": "重大疾病險",
+    "category": "Health",
+    "description": "罹患特定重大疾病(如心肌梗塞、腦中風)時，給付一筆理賠金。"
+  },
+  {
+    "id": "INS-005",
+    "name": "意外傷害險",
+    "category": "Accident",
+    "description": "因突發意外導致身故、失能或醫療花費時提供理賠。"
+  },
+  {
+    "id": "INS-006",
+    "name": "汽車保險 (車體險/第三人責任險)",
+    "category": "Property",
+    "description": "車輛發生交通事故時，理賠自身車損或賠償第三方的財損與體傷。"
+  },
+  {
+    "id": "INS-007",
+    "name": "住宅火險與地震險",
+    "category": "Property",
+    "description": "房屋因火災、閃電、爆炸或地震造成損毀時提供補償。"
+  },
+  {
+    "id": "INS-008",
+    "name": "旅遊平安險",
+    "category": "Travel",
+    "description": "出差或旅遊期間發生的意外傷害、突發疾病、班機延誤等風險。"
+  },
+  {
+    "id": "INS-009",
+    "name": "寵物險",
+    "category": "Pet",
+    "description": "涵蓋寵物生病、意外傷害的獸醫門診及住院費用。"
+  },
+  {
+    "id": "INS-010",
+    "name": "網路資安險",
+    "category": "Liability",
+    "description": "企業因遭駭客攻擊、資料外洩導致的營業中斷與第三方賠償責任。"
+  },
+  {
+    "id": "INS-011",
+    "name": "公共意外責任險",
+    "category": "Liability",
+    "description": "營業場所因設施或員工疏失，導致顧客受傷或財物受損的賠償責任。"
+  },
+  {
+    "id": "INS-012",
+    "name": "雇主意外責任險",
+    "category": "Liability",
+    "description": "員工在執行職務期間發生意外傷害，雇主依法應負之賠償責任。"
+  },
+  {
+    "id": "INS-013",
+    "name": "產品責任險",
+    "category": "Liability",
+    "description": "因產品設計、製造缺陷導致消費者體傷或財損的賠償。"
+  },
+  {
+    "id": "INS-014",
+    "name": "董監事及高階主管責任險 (D&O)",
+    "category": "Liability",
+    "description": "公司高層因執行職務的不當行為，遭股東或第三方求償的法律與賠償費用。"
+  },
+  {
+    "id": "INS-015",
+    "name": "營業中斷險",
+    "category": "Property",
+    "description": "因火災或天災導致工廠停工，補償期間的固定利潤損失與經常性支出。"
+  },
+  {
+    "id": "INS-016",
+    "name": "農業保險 (氣候參數型)",
+    "category": "Property",
+    "description": "依據氣象局降雨量、風速等數據，達到約定條件即自動理賠農作物損失。"
+  },
+  {
+    "id": "INS-017",
+    "name": "航班延誤險",
+    "category": "Travel",
+    "description": "班機延誤超過約定小時數，即給付定額補償。"
+  },
+  {
+    "id": "INS-018",
+    "name": "長期照顧險",
+    "category": "Health",
+    "description": "因老化或疾病導致失去生活自理能力(長照狀態)時，提供長期給付。"
+  },
+  {
+    "id": "INS-019",
+    "name": "手機/3C 碎屏險",
+    "category": "Property",
+    "description": "行動裝置螢幕意外破裂或損毀的維修費用補貼。"
+  },
+  {
+    "id": "INS-020",
+    "name": "專業責任保險 (PI)",
+    "category": "Liability",
+    "description": "醫師、律師、會計師等專業人士因業務疏失導致客戶損失的賠償。"
+  },
+  {
+    "id": "INS-021",
+    "name": "船舶險 / 航空險",
+    "category": "Property",
+    "description": "針對船隻、飛機的機體損毀及營運責任提供保障。"
+  },
+  {
+    "id": "INS-022",
+    "name": "貿易信用保險",
+    "category": "Finance",
+    "description": "保障企業因買方破產或倒帳而無法收回的應收帳款風險。"
+  },
+  {
+    "id": "INS-023",
+    "name": "綁架與勒索險 (K&R)",
+    "category": "Liability",
+    "description": "跨國企業高管遭綁架時的贖金、談判專家費用與公關處理費。"
+  },
+  {
+    "id": "INS-024",
+    "name": "工程險 (營造綜合保險)",
+    "category": "Property",
+    "description": "保障建築工程在施工期間發生的意外毀損或第三人責任。"
+  },
+  {
+    "id": "INS-025",
+    "name": "年金險",
+    "category": "Life",
+    "description": "保戶繳交保費後，保險公司於約定年齡開始定期給付生存金，防範長壽風險。"
+  },
+  {
+    "id": "INS-026",
+    "name": "疫苗接種險",
+    "category": "Health",
+    "description": "施打疫苗後發生不良反應，導致住院或身故的補償。"
+  },
+  {
+    "id": "INS-027",
+    "name": "外送員碎片化保險",
+    "category": "Accident",
+    "description": "僅在接單上線期間生效的第三人責任與意外傷害險。"
+  },
+  {
+    "id": "INS-028",
+    "name": "活動取消險",
+    "category": "Liability",
+    "description": "演唱會、展覽因颱風或突發事件被迫取消時，賠償主辦方的沉沒成本。"
+  },
+  {
+    "id": "INS-029",
+    "name": "租屋糾紛/租金補償險",
+    "category": "Property",
+    "description": "房東面臨租客欠租、惡意破壞房屋時的租金與修繕補償。"
+  },
+  {
+    "id": "INS-030",
+    "name": "無人機責任險",
+    "category": "Liability",
+    "description": "操作空拍機墜落導致砸傷路人或損毀財物的賠償責任。"
+  }
+]
