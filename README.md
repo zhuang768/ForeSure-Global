@@ -118,8 +118,8 @@ flowchart TD
 ### 1. Backend Setup & Verification
 ```bash
 # Clone the repository
-git clone https://github.com/zhuang768/ForeSure.git
-cd ForeSure
+git clone https://github.com/zhuang768/ForeSure-Global.git
+cd ForeSure-Global
 
 # Create virtual environment and install dependencies
 python3.11 -m venv .venv
